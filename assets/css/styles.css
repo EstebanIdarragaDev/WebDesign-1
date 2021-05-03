@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Image */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header .head{
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 3.75rem;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* ********************************************** */
+
+/* Servicio */
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #1B9CFC;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.container-servicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+.n-service{
+    margin-bottom: 7px;
+    color: #111;
+}
+
+.number{
+    display: inline-block;
+    background-color: #55E6C1;
+    height: 1.8rem;
+    width: 1.8rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin-right: 5px;
+}
+
+/* *********************************** */
+
+/* Galeria */
+.gallery{
+    background-color: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 30%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 30px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+/* *********************************** */
+
+/* Expertos */
+.subExperts{
+    margin-top: 40px;
+}
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.con-experts{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.con-experts img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* Footer */
+footer{
+    background: #2C3A47;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-icon{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #2C3A47;
+}
+
+.social-media-icon p{
+    line-height: 60px;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+
+@media  screen and (max-width:1024px) {
+    header .titulo{
+        font-size: 2.2rem;
+    }
+
+    .img-galeria{
+        height: 200px;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    .container-servicio{
+        flex-direction: column;
+    }
+
+    .container-servicio img{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    
+    .checklist-servicio{
+        width: 90%;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    .img-galeria{
+        width: 90%;
+        height: 300px;
+    }
+
+    .experts{
+        flex-direction: column;
+    }
+    .con-experts{
+        width: 60%;
+    }
+    .social-media{
+        display: none;
+    }
+}
